@@ -1,0 +1,18 @@
+{
+    "scriptFile": "__init__.py",
+    "bindings": [{
+            "name": "inputBlob",
+            "type": "blobTrigger",
+            "direction": "in",
+            "path": "fwc-files/input/{name}",
+            "connection": "blobStorage"
+        },
+        {
+            "name": "outputBlob",
+            "type": "blob",
+            "direction": "out",
+            "path": "fwc-files/output/{name}.json",
+            "connection": "blobStorage"
+        }
+    ]
+}
